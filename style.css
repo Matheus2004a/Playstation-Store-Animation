@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+:root{
+    /* Paleta de cores */
+    --cor-primaria: #db2886;
+    --cor-secundaria: #707070;
+    --cor-terciaria: #b7b7b7;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: -3px 2px 5px lightgrey;
+}
+
+header img{
+    width: 5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin-right: 1rem;
+    color: #000;
+}
+
+li a:hover{
+    color: var(--cor-primaria);
+    transition: 0.4s;
+}
+
+main{
+    margin-top: 5rem;
+}
+
+.section-controller{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-text-controller{
+    margin-left: 2rem;
+}
+
+.container-text-controller::before{
+    content: "";
+    background: linear-gradient(to right, #db2886, #af3fb4);
+    width: 0.625rem;
+    height: 20%;
+    position: absolute;
+    left: 0.6rem;
+}
+
+.container-text-controller h1{
+    font-size: 2rem;
+}
+
+.container-text-controller h3{
+    font-size: 1.875rem;
+    color: var(--cor-secundaria);
+    font-weight: 100;
+    margin: 1.25rem 0;
+}
+
+.container-text-controller p{
+    font-size: 1rem;
+    color: var(--cor-terciaria);
+    font-weight: 100;
+}
+
+.container-text-controller h4{
+    margin: 1rem 0;
+}
+
+.container-text-controller button{
+    width: 8.75rem;
+    padding: 0.75rem 0.625rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    background: linear-gradient(to right, #db2886, #af3fb4);
+}
+
+.container-text-controller button:hover{
+    opacity: 0.9;
+}
+
+.container-img-controller{
+    position: relative;
+    margin-right: 2rem;
+}
+
+.container-img-controller img{
+    width: 25rem;
+}
+
+.fundo-controller{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(to right, #db2886, #af3fb4);
+    border-radius: 1rem 0 0 1rem;
+    z-index: -1;
+    transform: translateX(2rem);
+}
+
+/* Botão de adicionar ao carrinho */
+.container-img-controller button{
+    border: none;
+    background-color: transparent;
+}
+
+.container-img-controller button img {
+    position: absolute;
+    top: 7rem;
+    right: -1.7rem;
+    width: 2rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.container-social-medias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-social-medias img{
+    height: 1.25rem;
+    margin: 1.25rem;
+}
+
+@media(min-width: 700px){
+    
+}
