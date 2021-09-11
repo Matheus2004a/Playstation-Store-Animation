@@ -37,6 +37,11 @@ nav ul li a{
     color: #000;
 }
 
+.menu-icon{
+    display: none;
+    width: 2rem;
+}
+
 li a:hover{
     color: var(--cor-primaria);
     transition: 0.4s;
@@ -149,6 +154,19 @@ main{
     margin: 1.25rem;
 }
 
-@media(min-width: 700px){
-    
+@media (max-width: 760px){
+    nav ul{
+        display: block;
+        position: relative;
+        top: 4.75rem;
+        left: 18rem;
+    }
+
+    nav ul li{
+        margin-top: 1rem;
+    }
+
+    .menu-icon{
+        display: block;
+    }
 }
