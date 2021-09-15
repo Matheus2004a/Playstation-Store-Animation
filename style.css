@@ -62,7 +62,8 @@ li a:hover{
 
 .icon-menu{
     display: none;
-    width: 2rem;
+    font-size: 2rem;
+    color: var(--cor-primaria);
 }
 
 main{
@@ -186,20 +187,42 @@ main{
     z-index: 2;
 }
 
+.section-produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.items-produtos{
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.items-produtos img{
+    width: 10rem;
+}
+
 .container-social-medias{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
 }
 
-.container-social-medias i{
+.container-social-medias a{
+    text-decoration: none;
+}
+
+.container-social-medias div{
     font-size: 1.5rem;
     color: #000;
     margin-right: 2rem;
 }
 
 
-@media (max-width: 760px){
+@media (max-width: 767px){
     nav ul{
         position: relative;
         top: 4.75rem;
