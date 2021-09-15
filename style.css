@@ -16,6 +16,7 @@
 
 html{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 header{
@@ -230,6 +231,15 @@ main{
 .movie-img p{
     margin: 1rem 2rem;
     font-weight: 800;
+}
+
+.voltar-topo{
+    padding: 0.7rem;
+    clip-path: circle();
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    border: none;
 }
 
 .container-social-medias{
