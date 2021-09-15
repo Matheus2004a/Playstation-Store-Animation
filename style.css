@@ -204,6 +204,34 @@ main{
     width: 10rem;
 }
 
+.section-information-movies{
+    margin-top: 5%;
+}
+
+.section-information-movies div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information-movies iframe{
+    width: 35rem;
+    margin: 0 2rem;
+}
+
+.movie-img{
+    display: flex;
+}
+
+.movie-img img{
+    width: 15rem;
+}
+
+.movie-img p{
+    margin: 1rem 2rem;
+    font-weight: 800;
+}
+
 .container-social-medias{
     display: flex;
     justify-content: center;
