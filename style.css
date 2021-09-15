@@ -14,6 +14,10 @@
     --cor-terciaria: #b7b7b7;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -32,19 +36,33 @@ nav ul{
 }
 
 nav ul li a{
+    position: relative;
     text-decoration: none;
     margin-right: 1rem;
     color: #000;
 }
 
-.menu-icon{
-    display: none;
-    width: 2rem;
+li a::after{
+    content: '';
+    width: 0;
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    border-bottom: 2px solid var(--cor-primaria);
+    transition: width 0.4s;
+}
+
+li a:hover::after{
+    width: 100%;
 }
 
 li a:hover{
     color: var(--cor-primaria);
-    transition: 0.4s;
+}
+
+.icon-menu{
+    display: none;
+    width: 2rem;
 }
 
 main{
@@ -92,8 +110,8 @@ main{
 }
 
 .container-text-controller button{
-    width: 8.75rem;
-    padding: 0.75rem 0.625rem;
+    width: 10rem;
+    padding: 0.75rem 0.5rem;
     cursor: pointer;
     border: none;
     outline: none;
@@ -101,10 +119,24 @@ main{
     border-radius: 5px;
     font-weight: 500;
     background: linear-gradient(to right, #db2886, #af3fb4);
+    transition: all 0.5s ease-in-out;
 }
 
 .container-text-controller button:hover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 11rem;
     opacity: 0.9;
+}
+
+.container-text-controller button img{
+    display: none;
+    width: 2.3rem;
+}
+
+.container-text-controller button:hover img{
+    display: block;
 }
 
 .container-img-controller{
@@ -114,6 +146,17 @@ main{
 
 .container-img-controller img{
     width: 25rem;
+    animation: moveController 2s infinite alternate ease-in-out;
+}
+
+@keyframes moveController{
+    from{
+        transform: translate(-5%, -5%) rotate(-5deg);
+    }
+
+    to{
+        transform: translate(0, 5px);
+    }
 }
 
 .fundo-controller{
@@ -149,24 +192,49 @@ main{
     align-items: center;
 }
 
-.container-social-medias img{
-    height: 1.25rem;
-    margin: 1.25rem;
+.container-social-medias i{
+    font-size: 1.5rem;
+    color: #000;
+    margin-right: 2rem;
 }
+
 
 @media (max-width: 760px){
     nav ul{
-        display: block;
         position: relative;
         top: 4.75rem;
         left: 18rem;
+        overflow: hidden;
+        transition: all 0.8s ease-in-out;
     }
-
+    
     nav ul li{
+        display: none;
         margin-top: 1rem;
     }
 
-    .menu-icon{
+    .icon-menu{
         display: block;
+        cursor: pointer;
+    }
+
+    .container-img-controller{
+        margin-bottom: 5rem;
+    }
+
+    .container-text-controller h1{
+        font-size: 1.8rem;
+    }
+
+    .container-text-controller h3{
+        font-size: 1.45rem;
+    }
+
+    .section-controller{
+        flex-direction: column-reverse;
+    }
+
+    .fundo-controller{
+        transform: translateX(6rem);
     }
 }
