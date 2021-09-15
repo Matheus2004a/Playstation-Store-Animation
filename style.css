@@ -193,12 +193,15 @@ main{
     justify-content: center;
     align-items: center;
     margin-top: 5%;
+    border-bottom: 2px solid var(--cor-terciaria);
 }
 
 .items-produtos{
     display: flex;
     align-items: center;
-    margin: 0 2rem;
+    padding: 1rem;
+    margin: 1rem 2rem;
+    border-right: 2px solid var(--cor-terciaria);
 }
 
 .items-produtos img{
@@ -213,6 +216,9 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.information-movies{
 }
 
 .information-movies iframe{
@@ -240,6 +246,12 @@ main{
     right: 1rem;
     bottom: 1rem;
     border: none;
+    cursor: pointer;
+}
+
+.voltar-topo:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
 }
 
 .container-social-medias{
