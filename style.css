@@ -41,6 +41,7 @@ header input{
 
 nav ul{
     display: flex;
+    align-items: center;
     list-style: none;
 }
 
@@ -69,10 +70,21 @@ li a:hover{
     color: var(--cor-primaria);
 }
 
+.icon-search{
+    position: relative;
+    left: 27rem;
+}
+
 .icon-menu{
     display: none;
     font-size: 2rem;
     color: var(--cor-primaria);
+}
+
+.icon-car,.icon-person{
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 0 1rem;
 }
 
 main{
