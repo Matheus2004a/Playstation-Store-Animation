@@ -111,7 +111,7 @@ main{
     margin: 1rem 0;
 }
 
-.container-text-controller button{
+.container-text-controller button,.section-information-movies .info-movie button{
     width: 10rem;
     padding: 0.75rem 0.5rem;
     cursor: pointer;
@@ -228,15 +228,26 @@ main{
 
 .movie-img{
     display: flex;
+    align-items: flex-start;
 }
 
 .movie-img img{
     width: 15rem;
 }
 
-.movie-img p{
+.section-information-movies .info-movie{
+    flex-direction: column;
     margin: 1rem 2rem;
     font-weight: 800;
+}
+
+.info-movie h4{
+    margin: 1rem 0;
+    color: var(--cor-terciaria);
+}
+
+.info-movie button{
+    margin: 1rem 0;
 }
 
 .voltar-topo{
