@@ -250,6 +250,22 @@ main{
     margin: 1rem 0;
 }
 
+.section-buy-products{
+    margin: 5% 0;
+}
+
+.section-buy-products h3{
+    margin: 2rem 4rem;
+}
+
+.section-buy-products article figure img{
+    width: 15rem;
+}
+
+.section-buy-products .cards{
+    display: flex;
+}
+
 .voltar-topo{
     padding: 0.7rem;
     clip-path: circle();
