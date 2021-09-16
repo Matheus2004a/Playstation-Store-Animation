@@ -31,6 +31,14 @@ header img{
     width: 5rem;
 }
 
+header input{
+    width: 20rem;
+    padding: 0.5rem;
+    outline: none;
+    font-size: 1rem;
+    caret-color: var(--cor-primaria);
+}
+
 nav ul{
     display: flex;
     list-style: none;
@@ -218,9 +226,6 @@ main{
     align-items: center;
 }
 
-.information-movies{
-}
-
 .information-movies iframe{
     width: 35rem;
     margin: 0 2rem;
@@ -236,6 +241,7 @@ main{
 }
 
 .section-information-movies .info-movie{
+    display: block;
     flex-direction: column;
     margin: 1rem 2rem;
     font-weight: 800;
@@ -264,6 +270,20 @@ main{
 
 .section-buy-products .cards{
     display: flex;
+    padding-left: 2rem;
+}
+
+.section-buy-products .cards picture{
+    flex-direction: column;
+    margin: 0 0.5rem;
+    padding: 1rem;
+    box-shadow: -1px 1px 11px 1px #ddd;
+}
+
+.section-buy-products .cards picture h4{
+    font-weight: normal;
+    text-align: center;
+    margin: 1rem 0;
 }
 
 .voltar-topo{
