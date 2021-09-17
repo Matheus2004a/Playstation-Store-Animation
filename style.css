@@ -20,11 +20,16 @@ html{
 }
 
 header{
+    position: fixed;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
     box-shadow: -3px 2px 5px lightgrey;
+    top: 0;
+    z-index: 20;
+    background-color: #fff;
 }
 
 header img{
@@ -87,26 +92,50 @@ li a:hover{
     margin: 0 1rem;
 }
 
-.background-modal-car{
+.background-modal-car,.background-modal-account{
     display: none;
     position: fixed;
+    top: 6rem;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
 }
 
-.modal-car{
-    width: 12rem;
+.modal-car,.modal-account{
+    width: 15rem;
     padding: 1rem;
     border-radius: 5px;
     position: relative;
     background-color: #fff;
-    left: 66rem;
+    left: 63rem;
     margin-top: 0.5rem;
 }
 
-.modal-car article{
+.modal-account article a{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.modal-account article a:hover{
+    color: var(--cor-primaria);
+    text-decoration: underline;
+    transition: 0.5s ease-in-out;
+}
+
+.modal-car .icon-close,.modal-account .icon-close{
+    position: relative;
+    left: 12rem;
+    margin: 0.2rem 0 1rem;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.modal-car .icon-close:hover,.modal-account .icon-close:hover{
+    opacity: 1;
+}
+
+.modal-car article,.modal-account article{
     text-align: center;
 }
 
@@ -115,7 +144,7 @@ li a:hover{
 }
 
 main{
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 
 .section-controller{
@@ -158,7 +187,7 @@ main{
     margin: 1rem 0;
 }
 
-.container-text-controller button,.section-information-movies .info-movie button,.modal-car button{
+.container-text-controller button,.section-information-movies .info-movie button,.modal-car button,.modal-account button{
     width: 10rem;
     padding: 0.75rem 0.5rem;
     cursor: pointer;
@@ -326,6 +355,7 @@ main{
 }
 
 .voltar-topo{
+    font-size: 1rem;
     padding: 0.7rem;
     clip-path: circle();
     position: fixed;
