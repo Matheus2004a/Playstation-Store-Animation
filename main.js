@@ -34,3 +34,14 @@ iconCloseModalAccount.addEventListener("click", function(){
 iconAccount.addEventListener("mouseover", function(){
     modalAccount.style.display = "block"
 })
+
+const btnVoltarTopo = document.querySelector(".voltar-topo")
+
+window.addEventListener("scroll", function(){
+    if(window.scrollY >= 800){
+        btnVoltarTopo.classList.add("show")
+    }
+    else{
+        btnVoltarTopo.classList.remove("show")
+    }
+})
