@@ -12,6 +12,7 @@
     --cor-primaria: #db2886;
     --cor-secundaria: #707070;
     --cor-terciaria: #b7b7b7;
+    --cor-avaliações-stars: #f2c832;
 }
 
 html{
@@ -86,10 +87,15 @@ li a:hover{
     color: var(--cor-primaria);
 }
 
-.icon-car,.icon-person{
+.icon-car,.icon-person,.icon-cart-arrow-down{
     font-size: 1.5rem;
     cursor: pointer;
     margin: 0 1rem;
+}
+
+.icon-cart-arrow-down{
+    font-size: xx-large;
+    margin: 1rem 0;
 }
 
 .background-modal-car,.background-modal-account{
@@ -110,6 +116,10 @@ li a:hover{
     background-color: #fff;
     left: 63rem;
     margin-top: 0.5rem;
+}
+
+.modal-car article button:active,.modal-account article button:active{
+    opacity: 0.7;
 }
 
 .modal-account article a{
@@ -145,6 +155,11 @@ li a:hover{
 
 main{
     margin-top: 10rem;
+}
+
+section figure{
+    display: grid;
+    justify-content: center;
 }
 
 .section-controller{
@@ -285,7 +300,10 @@ main{
 }
 
 .section-information-movies{
-    margin-top: 5%;
+    display: flex;
+    margin: 5% 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-information-movies div{
@@ -325,11 +343,13 @@ main{
 }
 
 .section-buy-products{
-    margin: 5% 0;
+    display: grid;
+    justify-content: center;
 }
 
 .section-buy-products h3{
-    margin: 2rem 4rem;
+    margin: 2rem 2.5rem;
+    font-size: x-large;
 }
 
 .section-buy-products article figure img{
@@ -338,7 +358,7 @@ main{
 
 .section-buy-products .cards{
     display: flex;
-    padding-left: 2rem;
+    margin-left: 2rem;
 }
 
 .section-buy-products .cards picture{
@@ -351,6 +371,12 @@ main{
 .section-buy-products .cards picture h4{
     font-weight: normal;
     text-align: center;
+    margin: 1rem 0;
+}
+
+.section-buy-products .container-avaliables{
+    display: flex;
+    justify-content: flex-start;
     margin: 1rem 0;
 }
 
