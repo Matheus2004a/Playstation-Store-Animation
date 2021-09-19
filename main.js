@@ -37,6 +37,7 @@ iconAccount.addEventListener("mouseover", function(){
 
 const btnVoltarTopo = document.querySelector(".voltar-topo")
 
+/* Adicionando exibição do botão de voltar ao topo de acordo com a altura do browser */
 window.addEventListener("scroll", function(){
     if(window.scrollY >= 800){
         btnVoltarTopo.classList.add("show")
