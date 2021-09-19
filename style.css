@@ -89,11 +89,14 @@ li a:hover{
 
 .icon-notification-shopping-cart{
     padding: 5px;
+    line-height: inherit;
     clip-path: circle();
     background-color: var(--cor-primaria);
     position: relative;
-    bottom: 0.5rem;
-    left: 2.6rem;
+    bottom: 0.75rem;
+    left: 2.9rem;
+    color: #fff;
+    font-weight: bold;
 }
 
 .icon-car,.icon-person,.icon-cart-arrow-down{
@@ -361,6 +364,10 @@ section figure{
     font-size: x-large;
 }
 
+.section-info-games p{
+    margin: 0 2.5rem;
+}
+
 .section-buy-products .cards figure img,.section-info-games .cards figure img{
     width: 15rem;
 }
@@ -391,6 +398,7 @@ section figure{
 .section-info-games .cards figure{
     height: 10rem;
 }
+
 
 .section-buy-products .cards picture h4{
     font-weight: normal;
@@ -426,11 +434,8 @@ section figure{
     cursor: pointer;
     transform: translateY(150%);
     transition: 0.5s;
-}
-
-.voltar-topo:hover{
-    transition: 0.5s;
-    transform: scale(1.1);
+    color: #fff;
+    background: linear-gradient(to right, #db2886, #af3fb4);
 }
 
 .voltar-topo.show{

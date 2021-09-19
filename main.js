@@ -16,30 +16,28 @@ const modalCar = document.querySelector(".background-modal-car")
 const modalAccount = document.querySelector(".background-modal-account")
 const iconCar = document.querySelector(".icon-car")
 const iconAccount = document.querySelector(".icon-person")
-const iconCloseModalCar = document.querySelector(".icon-close")
-const iconCloseModalAccount = document.querySelector(".icon-close-account")
 
-iconCar.addEventListener("mouseover", function(){
+iconCar.addEventListener("mouseover", () => {
     modalCar.style.display = "block"
 })
 
-iconCloseModalCar.addEventListener("click", function(){
+iconCar.addEventListener("mouseout", () => {
     modalCar.style.display = "none"
 })
 
-iconCloseModalAccount.addEventListener("click", function(){
-    modalAccount.style.display = "none"
+iconAccount.addEventListener("mouseover", () => {
+    modalAccount.style.display = "block"
 })
 
-iconAccount.addEventListener("mouseover", function(){
-    modalAccount.style.display = "block"
+iconAccount.addEventListener("mouseout", () => {
+    modalAccount.style.display = "none"
 })
 
 const btnVoltarTopo = document.querySelector(".voltar-topo")
 
 /* Adicionando exibição do botão de voltar ao topo de acordo com a altura do browser */
-window.addEventListener("scroll", function(){
-    if(window.scrollY >= 800){
+window.addEventListener("scroll", () => {
+    if(window.scrollY >= 700){
         btnVoltarTopo.classList.add("show")
     }
     else{
