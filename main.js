@@ -33,6 +33,12 @@ iconAccount.addEventListener("mouseout", () => {
     modalAccount.style.display = "none"
 })
 
+var listaProdutosLancamentos = ["https://images-americanas.b2w.io/produtos/01/00/img7/01/00/item/2751078/7/2751078757_1GG.jpg", "https://images-americanas.b2w.io/produtos/01/00/img/2590036/0/2590036053_1GG.jpg", "https://images-americanas.b2w.io/produtos/01/00/img/134193/9/134193952_1GG.jpg", "https://images-americanas.b2w.io/produtos/01/00/img/3270861/3/3270861396_1GG.jpg"]
+
+for(var i = 0; i < listaProdutosLancamentos.length; i++){
+    document.write("<img class='filmes-lançamentos'" + listaProdutosLancamentos[i] + "/>")
+}
+
 const btnVoltarTopo = document.querySelector(".voltar-topo")
 
 /* Adicionando exibição do botão de voltar ao topo de acordo com a altura do browser */
