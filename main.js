@@ -16,27 +16,31 @@ const modalCar = document.querySelector(".background-modal-car")
 const modalAccount = document.querySelector(".background-modal-account")
 const iconCar = document.querySelector(".icon-car")
 const iconAccount = document.querySelector(".icon-person")
+const iconCloseModalCar = document.querySelector(".icon-close-modal-car")
+const iconCloseModalAccount = document.querySelector(".icon-close-modal-account")
 
 iconCar.addEventListener("mouseover", () => {
     modalCar.style.display = "block"
 })
 
-iconCar.addEventListener("mouseout", () => {
+iconCloseModalCar.addEventListener("click", () => {
     modalCar.style.display = "none"
+})
+
+iconCloseModalAccount.addEventListener("click", () => {
+    modalAccount.style.display = "none"
 })
 
 iconAccount.addEventListener("mouseover", () => {
     modalAccount.style.display = "block"
 })
 
-iconAccount.addEventListener("mouseout", () => {
-    modalAccount.style.display = "none"
-})
+var listaProdutosLancamentos = [, "", "", ""]
 
-var listaProdutosLancamentos = ["https://images-americanas.b2w.io/produtos/01/00/img7/01/00/item/2751078/7/2751078757_1GG.jpg", "https://images-americanas.b2w.io/produtos/01/00/img/2590036/0/2590036053_1GG.jpg", "https://images-americanas.b2w.io/produtos/01/00/img/134193/9/134193952_1GG.jpg", "https://images-americanas.b2w.io/produtos/01/00/img/3270861/3/3270861396_1GG.jpg"]
+//var listaCards = document.querySelectorAll(".cards picture")
 
 for(var i = 0; i < listaProdutosLancamentos.length; i++){
-    document.write("<img class='filmes-lançamentos'" + listaProdutosLancamentos[i] + "/>")
+    document.write(`<img class="filmes-lançamentos" src="${listaProdutosLancamentos[i]}" >`)
 }
 
 const btnVoltarTopo = document.querySelector(".voltar-topo")
