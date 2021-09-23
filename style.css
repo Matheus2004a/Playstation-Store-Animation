@@ -419,7 +419,7 @@ section figure{
     margin: 1rem 0;
 }
 
-.container-avaliables i{
+.container-avaliables i,.container-avaliables .icon-star-rate{
     font-size: 1.2rem;
     color: var(--cor-avaliações-stars);
 }

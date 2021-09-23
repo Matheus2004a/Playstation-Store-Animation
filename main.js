@@ -23,25 +23,17 @@ iconCar.addEventListener("mouseover", () => {
     modalCar.style.display = "block"
 })
 
-iconCloseModalCar.addEventListener("click", () => {
+iconCar.addEventListener("mouseout", () => {
     modalCar.style.display = "none"
 })
 
-iconCloseModalAccount.addEventListener("click", () => {
+iconAccount.addEventListener("mouseout", () => {
     modalAccount.style.display = "none"
 })
 
 iconAccount.addEventListener("mouseover", () => {
     modalAccount.style.display = "block"
 })
-
-var listaProdutosLancamentos = [, "", "", ""]
-
-//var listaCards = document.querySelectorAll(".cards picture")
-
-for(var i = 0; i < listaProdutosLancamentos.length; i++){
-    document.write(`<img class="filmes-lançamentos" src="${listaProdutosLancamentos[i]}" >`)
-}
 
 const btnVoltarTopo = document.querySelector(".voltar-topo")
 
