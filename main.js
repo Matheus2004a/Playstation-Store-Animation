@@ -16,8 +16,6 @@ const modalCar = document.querySelector(".background-modal-car")
 const modalAccount = document.querySelector(".background-modal-account")
 const iconCar = document.querySelector(".icon-car")
 const iconAccount = document.querySelector(".icon-person")
-const iconCloseModalCar = document.querySelector(".icon-close-modal-car")
-const iconCloseModalAccount = document.querySelector(".icon-close-modal-account")
 
 iconCar.addEventListener("mouseover", () => {
     modalCar.style.display = "block"

@@ -443,18 +443,20 @@ section figure{
     transform: translateY(0);
 }
 
+footer{
+    
+}
+
 .container-social-medias{
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 5%;
 }
 
 .container-social-medias a{
     text-decoration: none;
 }
 
-.container-social-medias div{
+.container-social-medias i{
     font-size: 1.5rem;
     color: #000;
     margin-right: 2rem;
