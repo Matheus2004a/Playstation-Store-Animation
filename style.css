@@ -37,10 +37,6 @@ header img{
     width: 5rem;
 }
 
-.skeleton{
-    animation: animation-loading 1s linear infinite alternate;
-}
-
 header input{
     width: 20rem;
     padding: 0.5rem;
@@ -447,6 +443,10 @@ section figure{
     transform: translateY(0);
 }
 
+footer{
+    
+}
+
 .container-social-medias{
     display: flex;
     justify-content: center;
@@ -461,6 +461,7 @@ section figure{
     color: #000;
     margin-right: 2rem;
 }
+
 
 @media (max-width: 767px){
     nav ul{
