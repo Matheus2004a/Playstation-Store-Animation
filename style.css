@@ -439,15 +439,36 @@ footer{
         width: 17rem;
     }
 
-    nav ul{
+    .background-nav{
+        width: 100vw;
+        height: 100vh;
         position: fixed;
-        overflow: hidden;
-        transition: all 0.8s ease-in-out;
+        top: 6rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        left: 0;
+    }
+
+    nav ul{
+        opacity: 1;
+        visibility: visible;
+        flex-direction: column;
+        text-align: center;
+        place-content: center;
+        position: fixed;
+        width: 55vw;
+        height: 100vh;
+        top: 95px;
+        left: 14rem;
+        background-color: #eee;
+        transition: 0.3s;
     }
     
     nav ul li{
+        margin-top: 3rem;
+    }
+
+    nav i{
         display: none;
-        margin-top: 1rem;
     }
 
     .icon-menu{
