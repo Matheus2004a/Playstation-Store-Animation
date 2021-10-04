@@ -1,16 +1,9 @@
 const menuLista = document.querySelector("nav ul")
 const menuIcon = document.querySelector(".icon-menu")
 
-menuIcon.addEventListener("click", exibirMenu)
-
-function exibirMenu(){
-    if(menuLista.style.display == "none"){
-        menuLista.style.display = "block"
-    }
-    else{
-        menuLista.style.display = "none"
-    }
-}
+menuIcon.addEventListener("click", () => {
+    
+})
 
 const modalCar = document.querySelector(".background-modal-car")
 const modalAccount = document.querySelector(".background-modal-account")
@@ -37,10 +30,5 @@ const btnVoltarTopo = document.querySelector(".voltar-topo")
 
 /* Adicionando exibição do botão de voltar ao topo de acordo com a altura do browser */
 window.addEventListener("scroll", () => {
-    if(window.scrollY >= 700){
-        btnVoltarTopo.classList.add("show")
-    }
-    else{
-        btnVoltarTopo.classList.remove("show")
-    }
+    window.scrollY >= 700 ? btnVoltarTopo.classList.add("show") : btnVoltarTopo.classList.remove("show")
 })

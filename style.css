@@ -38,6 +38,7 @@ header img{
 }
 
 header input{
+    position: relative;
     width: 20rem;
     padding: 0.5rem;
     outline: none;
@@ -137,7 +138,6 @@ li a:hover{
 
 .modal-account article p{
     margin: 1rem 0;
-    width: 10rem;
 }
 
 .modal-account article a{
@@ -175,9 +175,8 @@ main{
     margin-top: 10rem;
 }
 
-section figure{
-    display: grid;
-    justify-content: center;
+section .cards{
+    
 }
 
 .section-controller{
@@ -317,17 +316,10 @@ section figure{
     width: 10rem;
 }
 
-.section-information-movies{
+.section-information-movies {
     display: flex;
+    justify-content: center;
     margin: 5% 0;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-information-movies div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .information-movies iframe{
@@ -360,11 +352,6 @@ section figure{
     margin: 1rem 0;
 }
 
-.section-buy-products{
-    display: grid;
-    justify-content: center;
-}
-
 .section-buy-products h3{
     margin: 2rem 2.5rem;
     font-size: x-large;
@@ -379,9 +366,7 @@ section figure{
     margin-left: 2rem;
 }
 
-.section-buy-products .cards picture{
-    display: grid;
-    justify-content: center;
+.section-buy-products .cards picture {
     margin: 0 0.5rem;
     padding: 1rem;
     box-shadow: -1px 1px 11px 1px #ddd;
@@ -430,7 +415,7 @@ section figure{
 }
 
 footer{
-    
+    margin: 5rem 0 3rem;
 }
 
 .container-social-medias{
@@ -450,10 +435,12 @@ footer{
 
 
 @media (max-width: 767px){
+    header input{
+        width: 17rem;
+    }
+
     nav ul{
-        position: relative;
-        top: 4.75rem;
-        left: 18rem;
+        position: fixed;
         overflow: hidden;
         transition: all 0.8s ease-in-out;
     }
@@ -466,6 +453,7 @@ footer{
     .icon-menu{
         display: block;
         cursor: pointer;
+        margin: 0 1rem;
     }
 
     .container-img-controller{
@@ -480,11 +468,32 @@ footer{
         font-size: 1.45rem;
     }
 
-    .section-controller{
+    .section-controller,.section-information-movies{
         flex-direction: column-reverse;
     }
 
     .fundo-controller{
         transform: translateX(6rem);
+    }
+
+    .information-movies iframe{
+        width: 28rem;
+        margin: 1rem;
+    }
+
+    .movie-img{
+        margin: 0 1rem;
+    }
+
+    .section-produtos{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto;
+        border: none;
+    }
+
+    .items-produtos{
+        border: none;
     }
 }
