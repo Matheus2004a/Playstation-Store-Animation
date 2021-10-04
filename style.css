@@ -135,6 +135,11 @@ li a:hover{
     opacity: 0.7;
 }
 
+.modal-account article p{
+    margin: 1rem 0;
+    width: 10rem;
+}
+
 .modal-account article a{
     text-decoration: none;
     color: var(--cor-terciaria);
@@ -360,13 +365,9 @@ section figure{
     justify-content: center;
 }
 
-.section-buy-products h3,.section-info-games h3{
+.section-buy-products h3{
     margin: 2rem 2.5rem;
     font-size: x-large;
-}
-
-.section-info-games p{
-    margin: 0 2.5rem;
 }
 
 .section-buy-products .cards figure img,.filmes-lançamentos{
@@ -378,16 +379,6 @@ section figure{
     margin-left: 2rem;
 }
 
-.section-info-games{
-    display: grid;
-    margin: 0 2rem;
-}
-
-.section-info-games .cards{
-    display: flex;
-    margin: 2rem 0;
-}
-
 .section-buy-products .cards picture{
     display: grid;
     justify-content: center;
@@ -395,11 +386,6 @@ section figure{
     padding: 1rem;
     box-shadow: -1px 1px 11px 1px #ddd;
 }
-
-.section-info-games .cards figure{
-    height: 10rem;
-}
-
 
 .section-buy-products .cards picture h4{
     font-weight: normal;
