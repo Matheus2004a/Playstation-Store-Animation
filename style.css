@@ -440,13 +440,16 @@ footer{
     }
 
     .background-nav{
+        visibility: hidden;
         width: 100vw;
         height: 100vh;
-        position: fixed;
+        position: absolute;
         top: 6rem;
         background-color: rgba(0, 0, 0, 0.5);
         left: 0;
+        transition: 0.3s;
     }
+
 
     nav ul{
         opacity: 1;
@@ -461,10 +464,23 @@ footer{
         left: 14rem;
         background-color: #eee;
         transition: 0.3s;
+        transform: translateX(100%);
+    }
+
+    nav ul.show-menu{
+        transform: translateX(0);
+    }
+
+    .background-nav.show-background{
+        visibility: visible;
     }
     
     nav ul li{
         margin-top: 3rem;
+    }
+
+    nav ul li a{
+        font-size: 1.5rem;
     }
 
     nav i{

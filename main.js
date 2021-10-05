@@ -1,8 +1,10 @@
 const menuLista = document.querySelector("nav ul")
+const backgroundMenuLista = document.querySelector(".background-nav")
 const menuIcon = document.querySelector(".icon-menu")
 
 menuIcon.addEventListener("click", () => {
-    
+    menuLista.classList.toggle("show-menu")
+    backgroundMenuLista.classList.toggle("show-background")
 })
 
 const modalCar = document.querySelector(".background-modal-car")
