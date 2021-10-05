@@ -11,16 +11,18 @@ const modalCar = document.querySelector(".background-modal-car")
 const modalAccount = document.querySelector(".background-modal-account")
 const iconCar = document.querySelector(".icon-car")
 const iconAccount = document.querySelector(".icon-person")
+const iconCloseCar = document.querySelector(".icon-close-modal-car")
+const iconCloseAccount = document.querySelector(".icon-close-modal-account")
 
 iconCar.addEventListener("mouseover", () => {
     modalCar.style.display = "block"
 })
 
-iconCar.addEventListener("mouseout", () => {
+iconCloseCar.addEventListener("click", () => {
     modalCar.style.display = "none"
 })
 
-iconAccount.addEventListener("mouseout", () => {
+iconCloseAccount.addEventListener("click", () => {
     modalAccount.style.display = "none"
 })
 
@@ -32,5 +34,5 @@ const btnVoltarTopo = document.querySelector(".voltar-topo")
 
 /* Adicionando exibição do botão de voltar ao topo de acordo com a altura do browser */
 window.addEventListener("scroll", () => {
-    window.scrollY >= 700 ? btnVoltarTopo.classList.add("show") : btnVoltarTopo.classList.remove("show")
+    window.scrollY >= 800 ? btnVoltarTopo.classList.add("show") : btnVoltarTopo.classList.remove("show")
 })
