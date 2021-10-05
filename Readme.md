@@ -4,4 +4,4 @@
 
 ### Resultado do projeto
 
-<img src="Store game.mp4">
+<img src="Store-game.gif">
