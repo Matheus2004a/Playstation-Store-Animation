@@ -483,6 +483,10 @@ footer{
         font-size: 1.5rem;
     }
 
+    li a::after{
+        top: 2rem;
+    }
+
     nav i{
         display: none;
     }
